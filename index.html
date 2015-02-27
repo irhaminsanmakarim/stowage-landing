@@ -25,17 +25,13 @@
     </head>
     <body>
         
-        <section class="navigatot">
+        <section class="navigatot navbar-fixed-top">
             <div class="logo-container">
                 <img src="images/logo.png" alt="">
             </div>
-            <nav class="menu">
-                <ul>
-                    <li><a href="#">How it works</a></li>
-                    <li><a href="#">security</a></li>
-                    <li><a class="button" href="#">interested?</a></li>
-                </ul>
-            </nav>
+            <a href="#" class="navigatot-item button-nav">INTERESTED ?</a>
+            <a href="#" class="navigatot-item">SECURITY</a>
+            <a href="#" class="navigatot-item">HOW IT WORKS</a>
         </section>
 
         <section id="landing" class="landing">
@@ -201,6 +197,21 @@
                 <h6 class="mail-7">Don't worry, we also hate spam.</h6>
             </div>
         </section>
+
+
+        <!-- HeadRoom  -->
+        <style type="text/css">
+            .headroom {position: fixed;top: 0;left: 0;right: 0;transition: all .2s ease-in-out;}
+            .headroom--unpinned {top: -100px;}
+            .headroom--pinned {top: 0;}
+        </style>
+
+        <script  type="text/javascript"  src="js/vendor/jquery-1.10.2.min.js"></script>      
+        <script  type="text/javascript"  src="https://rawgithub.com/WickyNilliams/headroom.js/master/dist/headroom.js"></script>      
+        <script  type="text/javascript"  src="https://rawgithub.com/WickyNilliams/headroom.js/master/src/jQuery.headroom.js"></script>
+        <script type="text/javascript">
+            $(".navbar-fixed-top").headroom();
+        </script> 
 
     </body>
 </html>

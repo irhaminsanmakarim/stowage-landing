@@ -757,6 +757,8 @@ strong {
   padding: 0 1.68em;
   margin: 0;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); }
+  .breakpoint-phone .navigatot {
+    padding: 0 .7em; }
 
 .logo-container {
   height: 32px;
@@ -765,6 +767,29 @@ strong {
   margin: 16px 0; }
   .logo-container img {
     height: 100%; }
+
+.navigatot-item {
+  line-height: 64px;
+  float: right;
+  text-decoration: none;
+  margin-left: 32px;
+  font-size: 14px;
+  color: #2ebfe3;
+  display: none; }
+  .breakpoint-desktop .navigatot-item {
+    display: block;
+    font-size: 16px; }
+
+.button-nav {
+  display: block;
+  padding: 4px 16px;
+  margin: 12px 0 12px 32px;
+  line-height: 32px;
+  background: #2ebfe3;
+  color: #fff;
+  border-radius: 5px; }
+  .button-nav:hover {
+    background: #1aa2c4; }
 
 .form {
   max-width: 350px;
