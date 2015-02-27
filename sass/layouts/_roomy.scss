@@ -48,6 +48,10 @@
 			max-width: 200px;
 			margin: 0 auto 2em;
 
+			.breakpoint-tablet-and-below & {
+				margin: 0 auto 0;
+			}
+
 			img {
 				width: 100%;
 			}

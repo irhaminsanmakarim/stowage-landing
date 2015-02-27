@@ -11,8 +11,12 @@
 
 .box {
 	padding: 6em 0 4em;
-	min-height: 100vh;
+	height: auto;
 	width: 100%;
+
+	.breakpoint-desktop & {
+		min-height: 100vh;
+	}
 }
 
 .container {
@@ -36,4 +40,8 @@
 .mainHeadline {
 	font-size: 4em;
 	font-weight: 300;
+
+	.breakpoint-phone & {
+		font-size: 3em;
+	}
 }

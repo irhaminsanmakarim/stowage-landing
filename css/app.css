@@ -463,6 +463,8 @@ body {
   height: 100%;
   width: 100%;
   color: #555; }
+  .breakpoint-phone body {
+    font-size: 15px; }
 
 h1,
 h2,
@@ -497,8 +499,10 @@ strong {
 
 .box, .landing, .easy, .roomy, .safe, .mail {
   padding: 6em 0 4em;
-  min-height: 100vh;
+  height: auto;
   width: 100%; }
+  .breakpoint-desktop .box, .breakpoint-desktop .landing, .breakpoint-desktop .easy, .breakpoint-desktop .roomy, .breakpoint-desktop .safe, .breakpoint-desktop .mail {
+    min-height: 100vh; }
 
 .container, .landing-container, .easy-container, .roomy-container, .safe-container, .mail-container {
   max-width: 1000px;
@@ -516,6 +520,8 @@ strong {
 .mainHeadline, .landing-headline, .easy-headline, .roomy-big-headline, .safe-headline {
   font-size: 4em;
   font-weight: 300; }
+  .breakpoint-phone .mainHeadline, .breakpoint-phone .landing-headline, .breakpoint-phone .easy-headline, .breakpoint-phone .roomy-big-headline, .breakpoint-phone .safe-headline {
+    font-size: 3em; }
 
 .landing {
   padding-top: 7em;
@@ -529,6 +535,8 @@ strong {
     font-size: 2.2em;
     margin: 0;
     line-height: 1.5em; }
+    .breakpoint-phone .landing-headline {
+      font-size: 2em; }
   .landing-secHeadline {
     color: #666;
     margin-bottom: 3em; }
@@ -660,6 +668,8 @@ strong {
     .roomy-bin1-imageContainer, .roomy-bin2-imageContainer {
       max-width: 200px;
       margin: 0 auto 2em; }
+      .breakpoint-tablet-and-below .roomy-bin1-imageContainer, .breakpoint-tablet-and-below .roomy-bin2-imageContainer {
+        margin: 0 auto 0; }
       .roomy-bin1-imageContainer img, .roomy-bin2-imageContainer img {
         width: 100%; }
     .roomy-bin1-headline, .roomy-bin2-headline {
@@ -719,6 +729,8 @@ strong {
   background: #121212;
   text-align: center;
   color: #2ebfe3; }
+  .mail-container {
+    padding-top: 1em; }
 
 .mail-space {
   margin-bottom: 50px; }
