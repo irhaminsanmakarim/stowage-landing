@@ -1,0 +1,47 @@
+.safe {
+	@extend .box;
+	background: $color1;
+	text-align: center;
+}
+
+.safe-container {
+	@extend .container;
+
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+}
+
+.safe-headline {
+	@extend .mainHeadline;
+	color: #ffffff;
+}
+
+.safe-item {
+	width: 33%;
+	float: left;
+	height: auto;
+	text-align: center;
+	margin-bottom: 2em;
+
+	.breakpoint-tablet & {
+		width: 50%;
+		height: 238px;
+	}
+	.breakpoint-phone & {
+		width: 100%;
+	}
+
+	&-text {
+		color: #fff;
+	}
+}
+.safe-imageContainer {
+	max-width: 140px;
+	margin: 0 auto .8em;
+	img {
+		width: 100%;
+	}
+}

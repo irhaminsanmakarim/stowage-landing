@@ -1,0 +1,150 @@
+.easy {
+	@extend .box;
+	background: $color1;
+	text-align: center;
+
+	&-container {
+		@extend .container;
+		max-width: 1200px;
+	}
+
+	&-headline {
+		@extend .mainHeadline;
+		color: #ffffff;
+	}
+
+	&-itemContainer {
+		@extend .clearfix;
+		position: relative;
+		margin-top: 4em;
+
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 25px;
+			left: 6em;
+			right: 6em;
+			border-top: 2px dotted rgba(0,0,0,.4);
+			z-index: 0;
+		}
+
+		.breakpoint-tablet &:before {
+			content: '';
+			display: block;
+			position: absolute;
+			height: 80%;
+			top: 25px;
+			left: 25px;
+			border-top: none;
+			border-left: 2px dotted rgba(0,0,0,.4);
+		}
+
+		.breakpoint-phone &:before {
+			content: '';
+			display: block;
+			position: absolute;
+			height: 90%;
+			top: 25px;
+			left: 50%;
+			border-top: none;
+			border-left: 2px dotted rgba(0,0,0,.4);
+		}
+	}
+
+	&-item {
+		display: inline-block;
+		float: left;
+		width: 20%;
+
+		.breakpoint-tablet & {
+			display: block;
+			width: 100%;
+			clear: both;
+		}
+
+		.breakpoint-phone & {
+			display: block;
+			width: 100%;
+			clear: both;
+		}
+
+		&-bullet {
+			width: 50px;
+			height: 50px;
+			position: relative;
+			border-radius: 2rem;
+			background: #EEFF41;
+			margin: 0 auto 1.5em;
+			text-align: center;
+			vertical-align: middle;
+			box-shadow: $materialz3;
+			z-index: 99;
+
+			p {
+				color: rgba(0,0,0,.7);
+				font-size: 25px;
+				line-height: 50px;
+			}
+
+			.breakpoint-tablet & {
+				float: left;
+			}
+			.breakpoint-phone & {
+				// font-size: .8em;
+			}
+		}
+
+		&-article {			
+			// .breakpoint-phone
+			margin: 0 auto 2em;
+			max-width: 300px;
+			position: relative;
+			background: #C6FF00;
+			border-radius: 4px;
+			color: rgba(0,0,0,.7);
+			padding: 2em 1em 1em;
+			
+
+			.breakpoint-desktop & {
+				min-height: 250px;
+				
+				margin: 0 .7em;
+				// box-shadow: $materialz1;
+
+				// &:hover {
+				// 	box-shadow: $materialz3;
+				// }
+			}
+
+			.breakpoint-tablet & {
+				
+				margin: 0 auto 2em;
+				max-width: 350px;
+				position: relative;
+				border-radius: 0 6px 6px 6px;
+
+				&:before {
+					position: absolute;
+					content: "";
+					left: -25px;
+					top: 0;
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 0 25px 25px 0;
+					border-color: transparent #C6FF00 transparent transparent;
+				}
+			}
+		}
+
+		&-imageContainer {
+			max-width: 100px;
+			margin: 0 auto .7em;
+
+			img {
+				width: 100%;
+			}
+		}
+	}
+}

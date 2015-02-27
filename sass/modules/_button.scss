@@ -1,0 +1,23 @@
+.button {
+
+	background-clip: padding-box;
+	border: none;
+	display: inline-block;
+	font-weight: 700;
+	letter-spacing: 1px;
+	line-height: 1em;
+	padding: 1em;
+	text-transform: uppercase;
+	background-color: $color1;
+	width: 100%;
+	a {
+		color: #fff;
+		font-size: .9em;
+		text-decoration: none;
+	}	
+
+	&:hover {
+		background-color: rgba(0,0,0,.7);
+		text-decoration: none;
+	}
+}

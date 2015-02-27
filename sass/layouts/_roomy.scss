@@ -1,0 +1,99 @@
+.roomy {
+	@extend .box;
+	background: #fff;
+
+	&-container {
+		@extend .container;
+		@extend .clearfix;
+	}
+
+	&-big {
+		width: 40%;
+		float: left;
+		height: auto;
+		text-align: center;
+
+		.breakpoint-tablet-and-below & {
+			width: 100%;
+		}
+
+		&-imageContainer {
+			max-width: 100%;
+			margin: 0 auto;
+
+			img {
+				width: 100%;
+			}
+
+			.breakpoint-tablet & {
+				max-width: 380px;
+			}
+		}
+
+		&-headline {
+			@extend .mainHeadline;
+			color:  $color1;
+		}
+
+	}
+
+	&-bin1 {
+		width: 30%;
+		float: left;
+		height: auto;
+		text-align: center;
+		padding: 1.4em;
+
+		&-imageContainer {
+			max-width: 200px;
+			margin: 0 auto 2em;
+
+			img {
+				width: 100%;
+			}
+		}
+		&-headline {
+			font-weight: bold;
+			color: $color1;
+			font-size: 1.5em;
+		}
+		&-article {
+			text-align: center;
+			padding: 0;
+		}
+
+		.breakpoint-tablet & {
+			width: 50%;
+		}
+		.breakpoint-phone & {
+			width: 100%;
+		}
+	}
+
+	&-bin2 {
+		@extend .roomy-bin1;
+
+		&-imageContainer {
+			@extend .roomy-bin1-imageContainer;
+		}
+		&-headline {
+			@extend .roomy-bin1-headline;
+		}
+		&-article {
+			@extend .roomy-bin1-article;
+			margin: 0 -1.4em 0;
+			border-left: 1px dotted #999;
+
+			.breakpoint-phone & {
+				border-left: none;
+			}
+		}
+
+		.breakpoint-tablet & {
+			width: 50%;
+		}
+		.breakpoint-phone & {
+			width: 100%;
+		}
+	}
+}
